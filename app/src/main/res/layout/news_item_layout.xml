@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+
+    <ImageView
+        android:id="@+id/newsItemImage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/img"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/newsItemTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continueing students requirements on the day of reporting for the 2022-23 academic year"
+        android:textSize="20sp"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"/>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

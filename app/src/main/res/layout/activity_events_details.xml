@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.EventsDetailsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/eventDetailsAddToFavoriteBtn">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <ImageButton
+                android:id="@+id/eventDetailsBackBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back_arrow"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:background="#00ffffff"/>
+
+
+
+           <ImageView
+                android:id="@+id/eventDetailsImage"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+               android:layout_marginTop="20dp"
+                android:src="@drawable/img"
+                android:scaleType="centerCrop"/>
+            <TextView
+                android:id="@+id/eventDetailsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Continueing students requirements on the day of reporting for the 2022-23 academic year"
+                android:textSize="20sp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textColor="@color/black"/>
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"/>
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Details"
+                android:textSize="12sp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/eventDetailsDate"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DATE: 22 August, 2022"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="14sp"
+                android:textColor="@color/dark_green"/>
+
+            <TextView
+                android:id="@+id/eventDetailsTime"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TIME: 17:00"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="14sp"
+                android:textColor="@color/dark_green"/>
+
+            <TextView
+                android:id="@+id/eventDetailsVenue"
+                android:layout_marginTop="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VENUE: Management Shade"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="14sp"
+                android:textColor="@color/dark_green"/>
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"/>
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textSize="12sp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/eventDetailsDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Continueing students requirements on the day of reporting for the 2022-23 academic year"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textColor="@color/dark_grey"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/eventDetailsAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="By: Minister of ICT"
+                android:textSize="16sp"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textColor="@color/dark_green"
+                android:layout_marginBottom="5dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/eventDetailsAddToFavoriteBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_create_account_btn_bg1"
+        android:text="Add to favorite"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"/>
+
+
+</RelativeLayout>

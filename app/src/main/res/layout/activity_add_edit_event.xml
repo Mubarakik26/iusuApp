@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddEditEventActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/add_event_image"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-3dp"
+                android:layout_marginEnd="0dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/images_placeholder" />
+
+            <ImageButton
+                android:id="@+id/add_event_image_ib"
+                android:layout_width="95dp"
+                android:layout_height="74dp"
+                android:layout_alignBottom="@id/add_event_image"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="168dp"
+                android:layout_marginTop="104dp"
+                android:layout_marginEnd="148dp"
+                android:layout_marginBottom="99dp"
+                android:background="#00ffffff"
+                android:src="@drawable/ic_camera" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/event_title_layout_tv"
+                android:layout_below="@id/add_event_image"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter title here"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_marginTop="20dp"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/event_venue_layout_tv"
+                android:layout_below="@id/event_title_layout_tv"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter venue here"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_marginTop="20dp"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/event_date_layout_tv"
+                android:layout_below="@id/event_venue_layout_tv"
+                android:layout_marginRight="20dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                android:layout_marginLeft="20dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter date here"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_marginTop="20dp"
+                    android:inputType="none"
+                    android:focusable="false"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageButton
+                android:id="@+id/pick_date_ib"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_date"
+                android:foregroundGravity="center"
+                android:backgroundTint="#00FFFFFF"
+                android:layout_alignBottom="@id/event_date_layout_tv"
+                android:layout_alignRight="@id/event_date_layout_tv"
+                android:layout_marginRight="20dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/event_time_layout_tv"
+                android:layout_below="@id/event_date_layout_tv"
+                android:layout_marginRight="20dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                android:layout_marginLeft="20dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter time here"
+                    android:fontFamily="@font/poppins_medium"
+                    android:layout_marginTop="20dp"
+                    android:inputType="none"
+                    android:focusable="false"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <ImageButton
+                android:id="@+id/pick_time_ib"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_time"
+                android:foregroundGravity="center"
+                android:backgroundTint="#00FFFFFF"
+                android:layout_alignBottom="@id/event_time_layout_tv"
+                android:layout_alignRight="@id/event_time_layout_tv"
+                android:layout_marginRight="20dp"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/event_time_layout_tv"
+                android:id="@+id/description_layout_tv"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="10"
+                    android:gravity="top|start"
+                    android:inputType="textMultiLine"
+                    android:hint="Enter description here"
+                    android:scrollbars="vertical"
+                    android:fontFamily="@font/poppins_medium"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/eventSubmitEventBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="18dp"
+        android:layout_marginLeft="18dp"
+        android:background="@drawable/sign_up_in_button_bg"
+        android:text="submit announcement"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

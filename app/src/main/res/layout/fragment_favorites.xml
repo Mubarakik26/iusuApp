@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.FavoritesFragment">
+    <TextView
+        android:id="@+id/favoritesPageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Favorites page"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/dark_green"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppins_medium"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/ffTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        android:layout_below="@id/favoritesPageTitle"
+        android:layout_marginTop="10dp"
+        app:tabIndicatorGravity="stretch"
+        app:tabSelectedTextColor="@color/white"
+        app:tabIndicatorAnimationMode="elastic"
+        app:tabIndicator="@drawable/event_date_bg"/>
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/ffViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ffTabLayout" />
+
+</RelativeLayout>

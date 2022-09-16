@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.HelpFragment">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <TextView
+       android:id="@+id/complaintPageTitle"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Complaint page"
+       android:textSize="20sp"
+       android:gravity="center"
+       android:textColor="@color/dark_green"
+       android:layout_centerHorizontal="true"
+       android:layout_alignParentTop="true"
+       android:layout_marginTop="20dp"
+       android:fontFamily="@font/poppins_medium"/>
+
+    <LinearLayout
+        android:id="@+id/fraghelphrlayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/complaintPageTitle"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fhMakeComplaintCard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="20dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="#4CAF50"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Make complaint"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="14sp"/>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fhGuildOfficialsCard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="20dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="#009688"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Guild officials"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="14sp"/>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/fraghelphrlayout"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/MyComplaintsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My complaints"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="@color/dark_green"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            app:dividerColor="@color/dark_grey"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/myComplaintRV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
+</ScrollView>

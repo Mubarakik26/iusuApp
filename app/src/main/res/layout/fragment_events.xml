@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.EventsFragment">
+
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:id="@+id/events_fab_btn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:src="@drawable/ic_plus"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_alignParentRight="true"/>-->
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Events"-->
+    <!--        android:textSize="20sp"-->
+    <!--        android:fontFamily="@font/poppins_semibold"/>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_events"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+
+
+</RelativeLayout>

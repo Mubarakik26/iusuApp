@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">iusuApp</string>
+
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="campus">
+        <item>Main Campus</item>
+        <item>Kampala Campus</item>
+        <item>Females Campus</item>
+        <item>Arua Campus</item>
+    </string-array>
+
+    <string-array name="faculty">
+        <item>Science</item>
+        <item>Law</item>
+        <item>Education</item>
+        <item>Arabic and Islamic Studies</item>
+        <item>Mass Communication</item>
+        <item>Nursing</item>
+        <item>Management</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

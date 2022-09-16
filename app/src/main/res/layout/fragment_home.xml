@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.HomeFragment">
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+     android:layout_alignParentTop="true">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+
+      <ImageButton
+          android:id="@+id/fhImageButtonNavDrawerMenu"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:src="@drawable/ic_menu"
+          android:layout_marginLeft="16dp"
+          android:layout_marginTop="16dp"
+         android:background="#00ffffff"/>
+      <TextView
+          android:id="@+id/fhTextViewGreeting"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Hello John Doe"
+          android:layout_marginLeft="16dp"
+          android:layout_marginTop="16dp"
+          android:textSize="20sp"
+          android:textColor="@color/dark_green"
+          android:fontFamily="@font/poppins_medium"
+          />
+
+<!--      <include layout="@layout/contain_main"/>-->
+
+       <com.google.android.material.tabs.TabLayout
+           android:id="@+id/fhTabLayout"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:tabMode="fixed"
+           app:tabGravity="fill"
+           android:layout_marginTop="10dp"
+           app:tabIndicatorGravity="stretch"
+           app:tabSelectedTextColor="@color/white"
+           app:tabIndicatorAnimationMode="elastic"
+           app:tabIndicator="@drawable/event_date_bg"/>
+
+
+      <androidx.viewpager2.widget.ViewPager2
+          android:id="@+id/fhViewPager"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+         />
+   </LinearLayout>
+
+  </ScrollView>
+
+   <com.google.android.material.floatingactionbutton.FloatingActionButton
+       android:id="@+id/fraghome_fab_btn"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="20dp"
+       android:layout_marginRight="20dp"
+       android:src="@drawable/ic_plus"
+       android:visibility="invisible"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentRight="true"/>
+
+
+</RelativeLayout>

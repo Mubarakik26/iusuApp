@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AnnouncementDetailsActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageButton
+            android:id="@+id/compDetailsBackBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back_arrow"
+
+            android:layout_marginTop="16dp"
+            android:background="#00ffffff"/>
+
+
+        <TextView
+            android:id="@+id/compDetailsGuildPostTitle"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To: Minister of ICT"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/compDetailsStudentName"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From: Muba Raka"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/compDetailsDate"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date: 22nd August 2022"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14sp"
+            android:textColor="@color/black"/>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:dividerColor="@color/dark_grey"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/compDetailsSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Continueing students requirements on the day of reporting for the 2022-23 academic year"
+            android:textSize="20sp"
+            android:fontFamily="@font/poppins"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/compDetailsMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Continueing students requirements on the day of reporting for the 2022-23 academic year"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/dark_grey"
+            android:layout_marginBottom="5dp"/>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:dividerColor="@color/dark_grey"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/MyComplaintsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comments"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textColor="@color/dark_green"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <com.google.android.material.divider.MaterialDivider
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:dividerColor="@color/dark_grey"
+            android:layout_marginTop="5dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/compDetailsCommentsRV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+    <EditText
+        android:id="@+id/commentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toLeftOf="@id/commentSendBtn"
+        android:background="@drawable/comment_layout_bg"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:hint="Enter your comment here"
+        android:maxLines="3"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/commentSendBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_send"
+        android:background="#00ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"/>
+
+
+
+
+
+
+</RelativeLayout>

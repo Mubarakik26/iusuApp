@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.ProfileFragment">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:background="@drawable/profile_image_bg">
+           <com.google.android.material.imageview.ShapeableImageView
+               android:id="@+id/prImageViewProfileImage"
+               android:layout_width="120dp"
+               android:layout_height="120dp"
+               android:layout_marginTop="50dp"
+               android:src="@drawable/account_placeholder_img"
+               android:scaleType="centerCrop"
+               android:layout_gravity="center"
+               app:shapeAppearance="@style/CornerCut"
+               />
+           <TextView
+               android:id="@+id/prTextViewFullname"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="20sp"
+               android:fontFamily="@font/poppins"
+               android:text="John Doe"
+               android:layout_gravity="center"
+               android:layout_marginTop="16dp"
+               android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/prTextViewEmail"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="16sp"
+               android:fontFamily="@font/poppins_medium"
+               android:text="john@stud.iuiu.ac.ug"
+               android:layout_gravity="center"
+               android:layout_marginBottom="16dp"
+               android:textColor="@color/white"/>
+
+       </LinearLayout>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Reg number"
+           android:fontFamily="@font/poppins_medium"
+           android:textSize="14sp"
+           android:layout_marginTop="16dp"
+           android:layout_marginLeft="16dp"
+           android:layout_marginRight="16dp"
+
+           />
+
+       <TextView
+           android:id="@+id/prTextViewRegno"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="111-222222-33333"
+           android:fontFamily="@font/poppins"
+           android:textSize="16sp"
+           android:layout_marginLeft="16dp"
+           android:layout_marginRight="16dp"/>
+
+       <com.google.android.material.divider.MaterialDivider
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="16dp"
+           android:layout_marginRight="16dp"
+           android:layout_marginTop="5dp"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Gender"
+           android:fontFamily="@font/poppins_medium"
+           android:textSize="14sp"
+           android:layout_marginTop="16dp"
+           android:layout_marginLeft="16dp"
+           android:layout_marginRight="16dp"
+
+           />
+
+        <TextView
+            android:id="@+id/prTextViewGender"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Male"
+           android:fontFamily="@font/poppins"
+           android:textSize="16sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+
+       <com.google.android.material.divider.MaterialDivider
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="16dp"
+           android:layout_marginRight="16dp"
+           android:layout_marginTop="5dp"/>
+
+         <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Campus"
+           android:fontFamily="@font/poppins_medium"
+           android:textSize="14sp"
+           android:layout_marginTop="16dp"
+           android:layout_marginLeft="16dp"
+           android:layout_marginRight="16dp"
+
+           />
+
+        <TextView
+            android:id="@+id/prTextViewCampus"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Main"
+           android:fontFamily="@font/poppins"
+           android:textSize="16sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+
+       <com.google.android.material.divider.MaterialDivider
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="16dp"
+           android:layout_marginRight="16dp"
+           android:layout_marginTop="5dp"/>
+        <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Phone"
+           android:fontFamily="@font/poppins_medium"
+           android:textSize="14sp"
+           android:layout_marginTop="16dp"
+           android:layout_marginLeft="16dp"
+           android:layout_marginRight="16dp"
+
+           />
+
+        <TextView
+            android:id="@+id/prTextViewPhone"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="0752362645"
+           android:fontFamily="@font/poppins"
+           android:textSize="16sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+       <com.google.android.material.divider.MaterialDivider
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="16dp"
+           android:layout_marginRight="16dp"
+           android:layout_marginTop="5dp"/>
+
+       <androidx.appcompat.widget.AppCompatButton
+           android:id="@+id/prButtonEditProfile"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/login_create_account_btn_bg1"
+           android:text="Edit Profile"
+           android:textAllCaps="false"
+           android:textColor="@color/white"
+           android:fontFamily="@font/poppins_medium"
+           android:textSize="14sp"
+           android:layout_marginLeft="16dp"
+           android:layout_marginRight="16dp"
+           android:layout_marginTop="30dp"
+           />
+
+ <androidx.appcompat.widget.AppCompatButton
+           android:id="@+id/prButtonLogout"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@drawable/login_create_account_btn_bg1"
+           android:text="Log out"
+           android:textAllCaps="false"
+           android:textColor="@color/white"
+           android:fontFamily="@font/poppins_medium"
+           android:textSize="14sp"
+           android:layout_marginLeft="16dp"
+           android:layout_marginRight="16dp"
+           android:layout_marginTop="30dp"
+           android:layout_marginBottom="20dp"/>
+
+
+
+   </LinearLayout>
+
+</ScrollView>
